@@ -1,0 +1,80 @@
+Задача 19 
+ Console.WriteLine("Введите пятизначное число: ");
+            int number = Convert.ToInt32(Console.ReadLine());
+          int num_1 = 0;
+          int num_2 = 0;
+          int num_3 = 0;
+          int num_4 = 0;
+          int num_5 = 0;
+
+ num_1 = number%10;
+ num_2 =  number%100; 
+ num_2 = num_2/10;
+ num_3 =  number%1000; 
+num_3 = num_3/100;
+ num_4 =  number%10000; 
+ num_4 = num_4/1000;
+ num_5 = number%100000;
+ num_5 = num_5/10000;
+
+if (num_1==num_5 && num_2==num_4)
+{
+    
+Console.WriteLine("число является полиномом");
+}
+else
+{
+          Console.WriteLine("число не является полиномом");   
+        }    
+
+            Console.ReadKey();
+Задача 21
+ Console.Write("Введите координаты первой точки x1: ");
+double x1 = Convert.ToDouble(Console.ReadLine());
+
+Console.Write("Введите координаты второй точки x2: ");
+double x2 = Convert.ToDouble(Console.ReadLine());
+
+Console.Write("Введите координаты первой точки y1: ");
+double y1 = Convert.ToDouble(Console.ReadLine());
+
+Console.Write("Введите координаты второй точки y2: ");
+double y2 = Convert.ToDouble(Console.ReadLine());
+
+Console.Write("Введите координаты первой точки z1: ");
+double z1 = Convert.ToDouble(Console.ReadLine());
+
+Console.Write("Введите координаты второй точки z2: ");
+double z2 = Convert.ToDouble(Console.ReadLine());
+
+double distance = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2) + Math.Pow(z2 - z1, 2)); //формула расчета дистанции
+Console.WriteLine("Расстояние между двумя точками в 3D пространстве равно: " );
+Console.Write (distance);
+Console.ReadKey();
+
+Задача 23
+Console.Write("Введите число: ");
+int chislo_1 = Convert.ToInt32(Console.ReadLine());
+
+void Сhislo_1(int[] chislo_1){
+  int count = 0;
+  int length = chislo_1.Length;
+  while (count <  length){
+    chislo_1[count] = Convert.ToInt32(Math.Pow(count, 3));
+    count++;
+  }
+}
+
+void PrintArry(int[] num){
+  int count_2 = num.Length;
+  int index = 0;
+  while(index < count_2){
+    Console.Write(num[index]+ " ");
+    index++;
+  }
+} 
+
+int[] arry = new int[chislo_1 + 1];
+Сhislo_1(arry);
+PrintArry(arry);
+Console.ReadKey();
