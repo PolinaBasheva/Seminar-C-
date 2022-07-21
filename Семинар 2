@@ -1,0 +1,47 @@
+Задача 10
+  Console.WriteLine("Введите трехзначное число: ");
+            int N = Convert.ToInt32(Console.ReadLine());
+          int i = 0;
+          int r = 0;
+ 
+r=N%100;
+i=r/10;
+
+                Console.Write(i);
+            Console.ReadKey();
+Задача 13
+ Console.WriteLine("Введите трехзначное число: ");
+            int N = Convert.ToInt32(Console.ReadLine());
+          int i = 0;
+          int r = 0;
+ 
+r=N%1000;
+i=r/100;
+if (i==null)
+{
+Console.WriteLine("третьей цифры нет");
+}
+else
+{
+                Console.Write(i);
+                }
+            Console.ReadKey();
+Задача 15
+
+            Console.WriteLine("Введите цифру дня недели: ");
+            int i = Convert.ToInt32(Console.ReadLine());
+          
+if (0<i && i<6)
+{
+Console.WriteLine("не выходной день");
+}
+else  if  (i>5 && i<8)
+{
+                Console.WriteLine("выходной день");
+}
+        else
+        {
+         Console.WriteLine("ошибка, такого дня недели не существует");   
+        }    
+
+            Console.ReadKey();
